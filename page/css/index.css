@@ -1,0 +1,1296 @@
+html {
+    width: 100%;
+    height: auto;
+    text-transform: "微软雅黑";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+input,
+textarea {
+    border-right: 0;
+    border: none;
+    border-radius: 0 !important;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+#player-container-id {
+    width: 42%;
+    height: 8rem;
+    margin: auto;
+}
+
+.bj {
+    width: 100%;
+    height: auto;
+}
+
+.bj-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.div2 {
+    background-image: url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/02-bj.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.dibu {
+    position: relative;
+}
+
+#inputs {
+    width: 8rem;
+    position: absolute;
+    left: 15rem;
+    top: 3.8rem;
+}
+
+#inputs form div {
+    margin-top: 0.2rem;
+    margin-left: 0.7rem;
+}
+
+textarea {
+    width: 5.5rem;
+    height: 3rem;
+}
+
+form div span {
+    float: left;
+    color: white;
+    font-size: 0.3rem;
+}
+
+.urname {
+    width: 5.5rem;
+    height: 0.5rem;
+    display: block;
+}
+
+.urphone {
+    width: 5.5rem;
+    height: 0.5rem;
+    display: block;
+}
+
+.rusub {
+    width: 5.6rem;
+    height: 0.5rem;
+    margin-top: 0.2rem;
+    margin-left: 1.7rem;
+    border: none;
+    color: black;
+    background-color: #ffc21e;
+}
+
+
+/*//移动端媒体查询适配*/
+
+@media screen and (min-width: 319px) and (max-width: 358px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.6rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.6rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.3rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 359px) and (max-width: 382px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.6rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.6rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.75rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 383px) and (max-width: 398px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.6rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.6rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 399px) and (max-width: 413px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.7rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width: 422px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.7rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 423px) and (max-width: 478px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.7rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 479px) and (max-width: 538px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.7rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 539px) and (max-width: 638px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 3.5rem;
+        top: -4.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.7rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 639px) and (max-width: 767px) {
+    .lunbo {
+        height: 2rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 4.2rem;
+        top: -5.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.9rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 1.5rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .lunbo {
+        height: 2.5rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 5.2rem;
+        top: -6.2rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.4rem;
+        height: 0.9rem;
+    }
+    .rusub {
+        width: 2.5rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 3.5rem;
+    }
+    #xfbox {
+        height: 2rem;
+        float: right;
+        position: relative;
+        right: -2rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 4rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 0.8rem;
+        line-height: 0.47rem;
+        font-size: 0.1rem;
+    }
+    #uresnames,
+    #uresphones {
+        width: 2rem;
+        height: 0.4rem;
+    }
+    #submits {
+        width: 0.9rem;
+        height: 0.5rem;
+        position: absolute;
+        right: 3rem;
+        top: 0.5rem;
+    }
+}
+
+@media screen and (max-width:1024px) and (max-width: 1100px) {
+    /*.xfbd{
+		display: none;
+	}*/
+}
+
+
+/*pc端媒体查询适配*/
+
+@media (min-width: 1024px) {
+    .lunbo {
+        height: 2.1rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 8rem;
+        top: -8.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.5rem;
+        height: 1.1rem;
+    }
+    .rusub {
+        width: 2.6rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+    /*#xfbox{
+		height: 2rem;
+		float: right;
+		position: relative;
+		right: 0rem;
+	}
+	#xfname , #xfphone{
+		width: 3rem;
+	}
+	#xfname div , #xfphone div{
+		width: 0.8rem;
+		line-height: 0.47rem;
+		font-size: 0.1rem;
+	}
+	#uresnames , #uresphones{
+		width: 2rem;
+		height: 0.4rem;
+	}
+	#submits{
+		width: 0.9rem;
+		height: 0.5rem;
+		position: absolute;
+		right: 3rem;
+		top: 0.5rem;
+	}*/
+}
+
+
+/*>=1024的设备*/
+
+@media (min-width: 1100px) {
+    .lunbo {
+        height: 2.3rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 8.4rem;
+        top: -4.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.5rem;
+        height: 1.1rem;
+    }
+    .rusub {
+        width: 2.6rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+}
+
+
+/*>=1100的设备*/
+
+@media (min-width: 1279px) {
+    .lunbo {
+        height: 2.7rem;
+    }
+    #inputs {
+        width: 5rem;
+        position: relative;
+        left: 10.4rem;
+        top: -5.5rem;
+    }
+    .urname {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    .urphone {
+        width: 2.5rem;
+        height: 0.3rem;
+    }
+    textarea {
+        width: 2.5rem;
+        height: 1.1rem;
+    }
+    .rusub {
+        width: 2.6rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.1rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+}
+
+
+/*>=1280的设备*/
+
+@media (min-width: 1366px) {
+    .lunbo {
+        height: 2.9rem;
+    }
+    #inputs {
+        width: 6rem;
+        position: relative;
+        left: 11.4rem;
+        top: -6rem;
+    }
+    .urname {
+        width: 3.5rem;
+        height: 0.5rem;
+    }
+    .urphone {
+        width: 3.5rem;
+        height: 0.5rem;
+    }
+    textarea {
+        width: 3.5rem;
+        height: 1.5rem;
+    }
+    .rusub {
+        width: 2.6rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.2rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .lunbo {
+        height: 3rem;
+    }
+    #inputs {
+        width: 6rem;
+        position: relative;
+        left: 11.4rem;
+        top: -6rem;
+    }
+    .urname {
+        width: 3.5rem;
+        height: 0.5rem;
+    }
+    .urphone {
+        width: 3.5rem;
+        height: 0.5rem;
+    }
+    textarea {
+        width: 3.5rem;
+        height: 1.5rem;
+    }
+    .rusub {
+        width: 2.6rem;
+        height: 0.5rem;
+        margin-left: 1.7rem;
+        font-size: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.2rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .lunbo {
+        height: 4rem;
+    }
+    #inputs {
+        width: 6rem;
+        position: relative;
+        left: 14.4rem;
+        top: -8rem;
+    }
+    .urname {
+        width: 4rem;
+        height: 0.7rem;
+    }
+    .urphone {
+        width: 4rem;
+        height: 0.7rem;
+    }
+    textarea {
+        width: 4rem;
+        height: 2rem;
+    }
+    .rusub {
+        width: 4rem;
+        height: 0.8rem;
+        margin-left: 1.7rem;
+        font-size: 0.5rem;
+        margin-top: 0.1rem;
+    }
+    #inputs form div {
+        margin-top: 0.2rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .lunbo {
+        height: 4.11rem;
+    }
+    #inputs {
+        width: 7rem;
+        position: relative;
+        left: 16.4rem;
+        top: -8rem;
+    }
+    .urname {
+        width: 4rem;
+        height: 0.7rem;
+    }
+    .urphone {
+        width: 4rem;
+        height: 0.7rem;
+    }
+    textarea {
+        width: 4rem;
+        height: 2rem;
+    }
+    .rusub {
+        width: 4.1rem;
+        height: 0.8rem;
+        margin-left: 1.7rem;
+        font-size: 0.5rem;
+        margin-top: 0.3rem;
+    }
+    #inputs form div {
+        margin-top: 0.3rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .lunbo {
+        height: 5.5rem;
+    }
+    #inputs {
+        width: 8rem;
+        position: relative;
+        left: 20.4rem;
+        top: -11rem;
+    }
+    #inputs span {
+        font-size: 0.5rem;
+    }
+    .urname {
+        width: 5rem;
+        height: 0.9rem;
+    }
+    .urphone {
+        width: 5rem;
+        height: 0.8rem;
+    }
+    textarea {
+        width: 5rem;
+        height: 3rem;
+    }
+    .rusub {
+        width: 5.1rem;
+        height: 0.8rem;
+        margin-left: 2.3rem;
+        font-size: 0.5rem;
+        margin-top: 0.3rem;
+    }
+    #inputs form div {
+        margin-top: 0.3rem;
+    }
+    #player-container-id {
+        width: 76%;
+        height: 4rem;
+    }
+    .dibu {
+        height: 5rem;
+    }
+    #xfbox {
+        float: right;
+        position: relative;
+        right: 10rem;
+    }
+    #xfname,
+    #xfphone {
+        width: 7rem;
+    }
+    #xfname div,
+    #xfphone div {
+        width: 1.4rem;
+        line-height: 0.77rem;
+        font-size: 0.5rem;
+    }
+    #uresnames,
+    #uresphones {
+        height: 0.7rem;
+    }
+    #submits {
+        width: 2.5rem;
+        height: 1rem;
+        position: absolute;
+        right: -1rem;
+    }
+}
+
+.div9 {
+    background-image: url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_09.jpg);
+    background-size: 100%;
+}
+
+
+/*悬浮表单*/
+
+.xfbd {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    /*background-color: rgba(126,0,7,0.8);*/
+    z-index: 999;
+    background-image: url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/xfbj.png);
+    background-size: 100%;
+}
+
+.xfbd .xfbox {
+    height: 2rem;
+    width: 7rem;
+    float: right;
+    position: relative;
+    right: 5rem;
+    overflow: hidden;
+}
+
+.xfbox div {
+    float: left;
+}
+
+.xfname {
+    width: 5rem;
+    margin-top: 0.1rem;
+}
+
+.xfphone {
+    width: 5rem;
+    margin-top: 0.1rem
+}
+
+.xfname div {
+    width: 1rem;
+    line-height: 0.47rem;
+    text-align: center;
+    float: left;
+    background-color: #ffc21e;
+}
+
+.xfphone div {
+    width: 1rem;
+    line-height: 0.47rem;
+    text-align: center;
+    float: left;
+    background-color: #ffc21e;
+}
+
+.xfnameinput {
+    width: 3.5rem;
+    height: 0.42rem;
+    border: none;
+}
+
+.xfsub {
+    width: 1.5rem;
+    height: 0.5rem;
+    display: block;
+    float: right;
+    font-size: 0.3rem;
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.3rem;
+    border: none;
+    background-color: #ffc21e;
+}
+
+.xfbd img {
+    float: left;
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+
+
+/*轮播*/
+
+.bj-lunbo {
+    width: 100%;
+    height: auto;
+}
+
+
+/*.lunbo{
+	width: 85%;
+	height: 2rem;
+	
+}*/
+
+
+/*.swiper-container {
+    width: 100%;
+    height: 2rem;
+} */
+
+.swiper-slide img {
+    width: 100%;
+}

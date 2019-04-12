@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="flexible" content="initial-dpr=2" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>霸王鱼鸡酸汤泡饭开发全国市场加盟,</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link href="https://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css" rel="stylesheet">
+    <script src="js/swiper.min.js"></script>
+    <script src="https://imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js"></script>
+    <script src="https://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.min.js"></script>
+    <script type="text/javascript">
+        (function(win, lib) {
+            var doc = win.document;
+            var docEl = doc.documentElement;
+            var metaEl = doc.querySelector('meta[name="viewport"]');
+            var flexibleEl = doc.querySelector('meta[name="flexible"]');
+            var dpr = 0;
+            var scale = 0;
+            var tid;
+            var flexible = lib.flexible || (lib.flexible = {});
+
+            if (metaEl) {
+                console.warn('将根据已有的meta标签来设置缩放比例');
+                var match = metaEl.getAttribute('content').match(/initial\-scale=([\d\.]+)/);
+                if (match) {
+                    scale = parseFloat(match[1]);
+                    dpr = parseInt(1 / scale);
+                }
+            } else if (flexibleEl) {
+                var content = flexibleEl.getAttribute('content');
+                if (content) {
+                    var initialDpr = content.match(/initial\-dpr=([\d\.]+)/);
+                    var maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/);
+                    if (initialDpr) {
+                        dpr = parseFloat(initialDpr[1]);
+                        scale = parseFloat((1 / dpr).toFixed(2));
+                    }
+                    if (maximumDpr) {
+                        dpr = parseFloat(maximumDpr[1]);
+                        scale = parseFloat((1 / dpr).toFixed(2));
+                    }
+                }
+            }
+
+            if (!dpr && !scale) {
+                var isAndroid = win.navigator.appVersion.match(/android/gi);
+                var isIPhone = win.navigator.appVersion.match(/iphone/gi);
+                var devicePixelRatio = win.devicePixelRatio;
+                if (isIPhone) {
+                    // iOS下，对于2和3的屏，用2倍的方案，其余的用1倍方案
+                    if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+                        dpr = 3;
+                    } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+                        dpr = 2;
+                    } else {
+                        dpr = 1;
+                    }
+                } else {
+                    // 其他设备下，仍旧使用1倍的方案
+                    dpr = 1;
+                }
+                scale = 1 / dpr;
+            }
+
+            docEl.setAttribute('data-dpr', dpr);
+            if (!metaEl) {
+                metaEl = doc.createElement('meta');
+                metaEl.setAttribute('name', 'viewport');
+                metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+                if (docEl.firstElementChild) {
+                    docEl.firstElementChild.appendChild(metaEl);
+                } else {
+                    var wrap = doc.createElement('div');
+                    wrap.appendChild(metaEl);
+                    doc.write(wrap.innerHTML);
+                }
+            }
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (width / dpr > 540) {
+                    width = 540 * dpr;
+                }
+                var rem = width / 10;
+                docEl.style.fontSize = rem + 'px';
+                flexible.rem = win.rem = rem;
+            }
+
+            win.addEventListener('resize', function() {
+                clearTimeout(tid);
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+            win.addEventListener('pageshow', function(e) {
+                if (e.persisted) {
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === 'complete') {
+                doc.body.style.fontSize = 12 * dpr + 'px';
+            } else {
+                doc.addEventListener('DOMContentLoaded', function(e) {
+                    doc.body.style.fontSize = 12 * dpr + 'px';
+                }, false);
+            }
+
+
+            refreshRem();
+
+            flexible.dpr = win.dpr = dpr;
+            flexible.refreshRem = refreshRem;
+            flexible.rem2px = function(d) {
+                var val = parseFloat(d) * this.rem;
+                if (typeof d === 'string' && d.match(/rem$/)) {
+                    val += 'px';
+                }
+                return val;
+            }
+            flexible.px2rem = function(d) {
+                var val = parseFloat(d) / this.rem;
+                if (typeof d === 'string' && d.match(/px$/)) {
+                    val += 'rem';
+                }
+                return val;
+            }
+
+        })(window, window['lib'] || (window['lib'] = {}));
+    </script>
+</head>
+
+<body>
+    <div class="bj div1">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/01.jpg">
+    </div>
+    <!-- 设置播放器容器 -->
+    <div class="bj div2" >
+        <video id="player-container-id" preload="auto" playsinline webkit-playinline x5-playinline></video>
+    </div>
+
+    <div class="bj div3">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_03.jpg">
+    </div>
+    <div class="bj div4">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_04.jpg">
+    </div>
+    <div class="bj div5">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_05.jpg">
+    </div>
+    <div class="bj div6">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_06.jpg">
+    </div>
+    <div class="bj div7">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_07.jpg">
+    </div>
+    <div class="bj div8">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_08.jpg">
+    </div>
+    <!-- 轮播 -->
+    <div class="bj-lunbo div9" id="div9">
+        <div class="lunbo">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" id="lunbodax"><img src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/lunbo1.png"></div>
+                    <div class="swiper-slide"><img src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/lunbo2.png"></div>
+                    <div class="swiper-slide"><img src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/lunbo3.png"></div>
+                    <div class="swiper-slide"><img src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/lunbo4.png"></div>
+                    <div class="swiper-slide"><img src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/lunbo5.png"></div>
+                    <div class="swiper-slide"><img src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/lunbo6.png"></div>
+                    <div class="swiper-slide"><img src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/lunbo7.png"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bj div10">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_10.jpg">
+    </div>
+    <div class="bj dibu div11">
+        <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/pc_11.jpg">
+        <div id="inputs">
+            <form>
+                <div>
+                    <span>姓		名：</span><input type="text" name="name" class="urname" id="uresname">
+                </div>
+                <div>
+                    <span>手		机：</span><input type="text" name="phone" class="urphone" id="uresphone">
+                </div>
+                <div>
+                    <span>留		言：</span><textarea id="liuyan"></textarea>
+                </div>
+
+                <input type="submit" name="" class="rusub" id="submit" value="提交">
+            </form>
+        </div>
+    </div>
+
+    <!-- 浮动表单 -->
+    <div class="xfbd">
+        <div class="xfbox" id="xfbox">
+            <div class="xfname" id="xfname">
+                <div>姓名</div><input type="text" class="xfnameinput urname" id="uresnames">
+            </div>
+            <div class="xfphone" id="xfphone">
+                <div>手机</div><input type="text" class="xfnameinput urphone" id="uresphones">
+            </div>
+            <input type="button" name="" class="xfsub rusub" id="submits" value="提交">
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var yidong = navigator.userAgent.toLowerCase();
+        if(/window/.test(yidong)){
+            // <!-- 轮播js -->
+                var mySwiper = new Swiper('.swiper-container', {
+                    direction: 'horizontal', // 垂直切换选项
+                    loop: true, // 循环模式选项
+                    autoplay: true, //自动轮播
+                    delay: 3000, //轮播时间
+                    slidesPerView: 6, //同时显示多少图片
+                    spaceBetween: 20, //间隔间隙
+
+                });
+               
+                $('.lunbo').css({
+                    'width':'50%',
+                    
+                    'margin':'auto'
+                });
+                $('.swiper-container').css({
+                    'height':'4rem',
+                    'width':'100%'
+                })
+        }else{
+            
+            $('.div1 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong01.jpg");
+            $('.div2').css("background-image","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong02.jpg");
+            $('.div3 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong03.jpg");
+            $('.div4 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong04.jpg");
+            $('.div5 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong05.jpg");
+            $('.div6 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong06.jpg");
+            $('.div7 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong07.jpg");
+            $('.div8 img').css("display","none");
+            $('.bj-lunbo').css('background-image','url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong08.jpg)')
+            $('.div10 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong09.jpg");
+            $('.div11 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong10.jpg");
+            $('.xfbd').css("background-image","url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/xfbj1.png)")
+            // <!-- 轮播js -->
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+                autoplay: true, //自动轮播
+                delay: 3000, //轮播时间
+                slidesPerView: 3, //同时显示多少图片
+                spaceBetween: 5, //间隔间隙
+
+            });
+            $('.lunbo').css({
+                'width':'75%',
+                'margin-left':'1.6rem'
+            });
+        }
+        if(/iphone|ipad|ipod/.test(yidong)){
+            $('#uresnames , #uresphones').css("height","0.3rem");
+            $('#submits').css({
+                "postiton":"absolute",
+                "right":"2.8rem"
+            })
+        }
+        
+
+
+})
+
+    
+
+    // 视频
+    var player = TCPlayer("player-container-id", { // player-container-id 为播放器容器ID，必须与html中一致
+        fileID: "5285890787493590194", // 请传入需要播放的视频filID 必须
+        appID: "1255961684", // 请传入点播账号的appID 必须
+        autoplay: false //是否自动播放
+            //其他参数请在开发文档中查看
+    });
+
+
+    // 验证中文名称
+    function isChinaName(name) {
+        var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+        return pattern.test(name);
+    }
+
+    // 验证手机号
+    function isPhoneNo(phone) {
+        var pattern = /^1[3456789]\d{9}$/;
+        return pattern.test(phone);
+    }
+
+    // 验证函数  底部的表单
+    function formValidate() {
+        var str = '';
+        // 判断名称
+        var username = $('#uresname').val();
+        if ($.trim(username).length == 0) {
+            str += '名称没有输入\n';
+            $('#uresname').focus();
+        } else {
+            if (isChinaName($.trim(username)) == false) {
+                str += '名称不合法\n';
+                $('#uresname').focus();
+            }
+        }
+
+
+        // 判断手机号码
+        var phone = $('#uresphone').val();
+        if ($.trim(phone).length == 0) {
+            str += '手机号没有输入\n';
+            $('#uresphone').focus();
+        } else {
+            if (isPhoneNo($.trim(phone) == false)) {
+                str += '手机号码不正确\n';
+                $('#uresphone').focus();
+            }
+        }
+
+        // 如果没有错误则提交
+        if (str) {
+            alert(str);
+            return false;
+        }
+        return true
+    }
+
+    //悬浮的表单
+    function formValidatess() {
+        var arr = '';
+        // 判断名称
+        var username = $('#uresnames').val();
+        if ($.trim(username).length == 0) {
+            arr += '名称没有输入\n';
+            $('#uresnames').focus();
+        } else {
+            if (isChinaName($.trim(username)) == false) {
+                arr += '名称不合法\n';
+                $('#uresnames').focus();
+            }
+        }
+
+
+        // 判断手机号码
+        var phone = $('#uresphones').val();
+        if ($.trim(phone).length == 0) {
+            arr += '手机号没有输入\n';
+            $('#uresphones').focus();
+        } else {
+            if (isPhoneNo($.trim(phone) == false)) {
+                arr += '手机号码不正确\n';
+                $('#uresphones').focus();
+            }
+        }
+
+        // 如果没有错误则提交
+        if (arr) {
+            alert(arr);
+            return false;
+        }
+        alert("提交成功");
+        return true
+    }
+    //底部的表单发送
+    $('#submit').on('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        // console.log('text');
+        // return
+
+        if (formValidate()) {
+            var uresname = $('#uresname').val();
+            var uresphone = $('#uresphone').val();
+            var liuyan = $('#liuyan').val();
+            var time = Date.now();
+
+            function type() {
+                var ua = navigator.userAgent.toLowerCase();
+                if (/window/.test(ua)) {
+                    return "C";
+                } else {
+                    return "P"
+                }
+            }
+            type();
+            $.ajax({
+                type: "post",
+                url: "http://122.152.208.20:9000/save",
+                data: {
+                    name: uresname,
+                    phone: uresphone,
+                    memo:liuyan,
+                    time: time,
+                    type: type
+                },
+                success: function(res) {
+                    console.log(res)
+                }
+            })
+        }
+    })
+
+    //悬浮的表单发送
+    $('#submits').on('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        // console.log('text');
+        // return
+
+        if (formValidatess()) {
+            var uresname = $('#uresnames').val();
+            var uresphone = $('#uresphones').val();
+
+            var time = Date.now();
+
+            function type() {
+                var ua = navigator.userAgent.toLowerCase();
+                if (/window/.test(ua)) {
+                    return "C";
+                } else {
+                    return "P"
+                }
+            }
+            type();
+            $.ajax({
+                type: "post",
+                url: "http://122.152.208.20:9000/save",
+                data: {
+                    name: uresname,
+                    phone: uresphone,
+                    time: time,
+                    type: type
+                },
+                success: function(res) {
+                    console.log(res)
+                }
+            })
+        }
+    })
+</script>
+
+</html>
