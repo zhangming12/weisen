@@ -43,7 +43,8 @@ export default {
         {
           title: "留言",
           align: "center",
-          key: "memo"
+          key: "memo",
+          tooltip: true
         },
         {
           title: "来源",
@@ -99,7 +100,7 @@ export default {
               });
               // this
               data.data.reverse();
-              this.pageData = data.data;
+              this.pageData = this.uniqueArray(data.data);
             } else {
               this.$Message.info(data.errorMsg);
             }
@@ -108,6 +109,19 @@ export default {
         .catch(function(err) {
           console.error(err);
         });
+    },
+    //数组去重
+    uniqueArray(arr) {
+      if (!arr || !arr.length) return;
+      let obj = {},
+        newArr = [];
+      arr.forEach(item => {
+        if (!obj[item.phone + "a"]) {
+          obj[item.phone + "a"] = "a";
+          newArr.push(item);
+        }
+      });
+      return newArr;
     }
   }
 };

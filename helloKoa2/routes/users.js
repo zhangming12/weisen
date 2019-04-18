@@ -51,4 +51,38 @@ router.post('/save', async(ctx, next) => {
     })
 })
 
+router.post('/unique', async(ctx, next) => {
+    let mongodb = Monk('122.152.208.20:27017/test') //连接数据库
+        // 读取集合
+    let myData = mongodb.get('ceshi')
+    myData.find().then((res) => {
+        mongodb.close();
+        ctx.response.body = {
+            status: 1,
+            errorMsg: null,
+            data: res
+        }
+        return
+        let obj = {}
+        res.forEach(item => {
+            if (!obj[item.phone + "a"]) {
+                obj[item.phone + "a"] = "a"
+            } else {
+                console.log("ceshi--------")
+                console.log(item);
+                myData.remove(item)
+            }
+        })
+        mongodb.close();
+        ctx.response.body = {
+            status: 1,
+            errorMsg: null,
+            data: res
+        }
+    })
+
+})
+
+
+
 module.exports = router
