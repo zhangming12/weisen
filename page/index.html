@@ -140,7 +140,7 @@
         <img class="bj-img" src="https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/01.jpg">
     </div>
     <!-- 设置播放器容器 -->
-    <div class="bj div2" >
+    <div class="bj div2">
         <video id="player-container-id" preload="auto" playsinline webkit-playinline x5-playinline></video>
     </div>
 
@@ -216,44 +216,44 @@
 </body>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
-    $(function(){
+    $(function() {
         var yidong = navigator.userAgent.toLowerCase();
-        if(/window/.test(yidong)){
+        if (/window/.test(yidong)) {
             // <!-- 轮播js -->
-                var mySwiper = new Swiper('.swiper-container', {
-                    direction: 'horizontal', // 垂直切换选项
-                    loop: true, // 循环模式选项
-                    autoplay: true, //自动轮播
-                    delay: 3000, //轮播时间
-                    slidesPerView: 6, //同时显示多少图片
-                    spaceBetween: 20, //间隔间隙
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+                autoplay: true, //自动轮播
+                delay: 3000, //轮播时间
+                slidesPerView: 6, //同时显示多少图片
+                spaceBetween: 20, //间隔间隙
 
-                });
-               
-                $('.lunbo').css({
-                    'width':'50%',
-                    
-                    'margin':'auto'
-                });
-                $('.swiper-container').css({
-                    'height':'4rem',
-                    'width':'100%'
-                })
-        }else{
-            
-            $('.div1 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong01.jpg");
-            $('.div2').css("background-image","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong02.jpg");
-            $('.div3 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong03.jpg");
-            $('.div4 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong04.jpg");
-            $('.div5 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong05.jpg");
-            $('.div6 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong06.jpg");
-            $('.div7 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong07.jpg");
-            $('.div8 img').css("display","none");
-            $('.bj-lunbo').css('background-image','url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong08.jpg)')
-            $('.div10 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong09.jpg");
-            $('.div11 img').attr("src","https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong10.jpg");
-            $('.xfbd').css("background-image","url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/xfbj1.png)")
-            // <!-- 轮播js -->
+            });
+
+            $('.lunbo').css({
+                'width': '50%',
+
+                'margin': 'auto'
+            });
+            $('.swiper-container').css({
+                'height': '4rem',
+                'width': '100%'
+            })
+        } else {
+
+            $('.div1 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong01.jpg");
+            $('.div2').css("background-image", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong02.jpg");
+            $('.div3 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong03.jpg");
+            $('.div4 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong04.jpg");
+            $('.div5 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong05.jpg");
+            $('.div6 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong06.jpg");
+            $('.div7 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong07.jpg");
+            $('.div8 img').css("display", "none");
+            $('.bj-lunbo').css('background-image', 'url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong08.jpg)')
+            $('.div10 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong09.jpg");
+            $('.div11 img').attr("src", "https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/yidong10.jpg");
+            $('.xfbd').css("background-image", "url(https://zm1995-1255961684.cos.ap-shanghai.myqcloud.com/image/xfbj1.png)")
+                // <!-- 轮播js -->
             var mySwiper = new Swiper('.swiper-container', {
                 direction: 'horizontal', // 垂直切换选项
                 loop: true, // 循环模式选项
@@ -264,27 +264,27 @@
 
             });
             $('.lunbo').css({
-                'width':'75%',
-                'margin-left':'1.6rem'
+                'width': '75%',
+                'margin-left': '1.6rem'
             });
         }
-        if(/iphone|ipad|ipod/.test(yidong)){
-            $('#uresnames , #uresphones').css("height","0.3rem");
+        if (/iphone|ipad|ipod/.test(yidong)) {
+            $('#uresnames , #uresphones').css("height", "0.3rem");
             $('#submits').css({
-                "postiton":"absolute",
-                "right":"2.8rem"
+                "postiton": "absolute",
+                "right": "2.8rem"
             })
         }
-        
 
 
-})
 
-    
+    })
+
+
 
     // 视频
     var player = TCPlayer("player-container-id", { // player-container-id 为播放器容器ID，必须与html中一致
-        fileID: "5285890787493590194", // 请传入需要播放的视频filID 必须
+        fileID: "5285890788403452545", // 请传入需要播放的视频filID 必须
         appID: "1255961684", // 请传入点播账号的appID 必须
         autoplay: false //是否自动播放
             //其他参数请在开发文档中查看
@@ -403,7 +403,7 @@
                 data: {
                     name: uresname,
                     phone: uresphone,
-                    memo:liuyan,
+                    memo: liuyan,
                     time: time,
                     type: type
                 },
